@@ -25,7 +25,7 @@ module.exports = {
       ref: DEPLOY_REF,
       repo: DEPLOY_REPO,
       path: DEPLOY_PATH,
-      'post-deploy' : 'cd ~/web-plus-pm2-deploy/frontend/source/frontend/ && npm i && npm run build',
+      'post-deploy' : 'cd frontend && npm i&& npm run build',
     }
   }
 };
