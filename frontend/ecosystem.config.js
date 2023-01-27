@@ -14,7 +14,7 @@ module.exports = {
   apps: [
     {
       name   : "mesto-app-frontend",
-      script : ".src/index.js"
+      script : "./build/index.html"
     },
   ],
 
