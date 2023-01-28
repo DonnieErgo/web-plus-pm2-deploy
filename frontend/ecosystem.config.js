@@ -25,7 +25,8 @@ module.exports = {
       ref: DEPLOY_REF,
       repo: DEPLOY_REPO,
       path: DEPLOY_PATH,
-      'post-deploy' : 'cd frontend && npm i && npm run build',
+      'pre-deploy-local': `eval $(ssh-agent -s) && ssh-add ~/.ssh/id_rsa`,
+      'post-deploy': 'cd frontend && npm i && npm run build',
     }
   }
 };
